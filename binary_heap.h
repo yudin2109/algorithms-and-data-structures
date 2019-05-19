@@ -51,7 +51,7 @@ class BinaryHeap {
         data.reserve(capacity);
     }
 
-    BinaryHeap(const vector<pair<int, int>>& _data) : data{_data} {
+    BinaryHeap(const vector<T>& _data) : data{_data} {
         for (size_t i = 0; i < data.size(); ++i) {
             HeapDown(data.size() - i - 1);
         }
